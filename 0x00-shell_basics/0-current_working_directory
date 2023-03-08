@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e './0-current_working_directory\n' $(pwd)'\n'
+echo -e $(pwd)'\n'
