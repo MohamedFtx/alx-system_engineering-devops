@@ -2,11 +2,11 @@
 #!usr/bin/env bash
 echo 'put the name of file: '
 read name
-touch name
-echo -e '#!/bin/bash\n' > name
+touch $name
+echo -e '#!/bin/bash\n' > $name
 echo 'put the code: '
 read code
-echo $code > name
+echo $code > $name
 git add .
 echo 'put the msg: '
 read txt
