@@ -5,7 +5,7 @@ read name
 touch $name
 echo 'put the code: '
 read code
-echo -e '#!/bin/bash\n'$code \n >> $name
+echo -e '#!/bin/bash\n'$code '\n' >> $name
 chmod u+x $name
 git add .
 echo 'put the msg: '
