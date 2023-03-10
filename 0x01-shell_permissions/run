@@ -2,10 +2,10 @@
 #!usr/bin/env bash
 echo 'put the name of file: '
 read name
-touch $name
-echo 'put the code: '
-read code
-echo -e '#!/bin/bash\n'$code '\n' >> $name
+::touch $name
+::echo 'put the code: '
+::read code
+::echo -e '#!/bin/bash\n'$code >> $name
 chmod u+x $name
 git add .
 echo 'put the msg: '
