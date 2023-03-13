@@ -6,9 +6,10 @@ if [ $name == README.md ]; then
 read -p "enter the code: " code
 echo -e $code >> $name
 else
-echo -e '#!/bin/bash\n' >> $name
+#echo -e '#!/bin/bash\n' >> $name
 read -p "enter your option[cp|lin|vim]: " option
 if [ $option == vim ]; then
+echo -e '#!/bin/bash\n' >> $name
 vim $name
 elif [ $option == lin ]; then
 count=0
