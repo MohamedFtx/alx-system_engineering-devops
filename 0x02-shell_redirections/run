@@ -31,5 +31,5 @@ cat $name
 git add .
 echo 'enter your commit: '
 read -a txt
-git commit -m"${txt[0]} ${txt[1]} ${txt[2]} ${txt[3]} ${txt[4]}"
+git commit -m"${txt[0]} ${txt[1]} ${txt[2]} ${txt[3]} ${txt[4]} ${txt[5]}"
 git push
