@@ -9,7 +9,11 @@ else
 #echo -e '#!/bin/bash\n' >> $name
 read -p "enter your option[cp|lin|vim]: " option
 if [ $option == vim ]; then
+size=$(wc -c $name | awk '{print $1}')
+if [ $size == 0 ]; then
 echo -e '#!/bin/bash\n' >> $name
+fi
+#echo -e '#!/bin/bash\n' >> $name
 vim $name
 elif [ $option == lin ]; then
 count=0
